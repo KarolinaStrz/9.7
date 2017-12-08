@@ -84,7 +84,8 @@ function playerPick(playerPick) {
     playerPickElem.innerHTML = playerPick;
     computerPickElem.innerHTML = computerPick;
 
-    checkRoundWinner(playerPick, computerPick);
+ checkRoundWinner(playerPick, computerPick);
+   
 }
 
 var playerPickElem = document.getElementById('js-playerPick'),
@@ -116,8 +117,9 @@ function checkRoundWinner(playerPick, computerPick) {
         computerResultElem.innerHTML = "Win!";
         computer.score++;
     }
-
+	setGamePoints()
 }
+
 
 // aktualizacja wyniku
 
